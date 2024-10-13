@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-text {
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #d3d3d3;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: gold;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d4af37;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(80, 52, 0, 0.5), rgba(0, 0, 0, 0.9)), url('background-image.jpg') no-repeat center center/cover;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+/* Solutions Section */
+.solutions {
+  padding: 100px 50px;
+  background-color: #1a1a1a;
+}
+
+.solutions h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.solutions-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.solution-card {
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 30%;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-10px);
+}
+
+.solution-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: gold;
+}
+
+/* Clients Section */
+.clients {
+  padding: 50px 0;
+  background-color: #181818;
+  text-align: center;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.client-logos img {
+  width: 150px;
+  margin: 0 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-logos img:hover {
+  filter: grayscale(0);
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #121212;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #888;
+}
